@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Varie o tamanho da tela</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/onerepublic-i-lived.mp3" type="audio/mpeg">
+        <source src="midia/onerepublic-i-lived.wav" type="audio/wav">
+        <source src="midia/onerepublic-i-lived.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudios. <a href="midia/onerepublic-i-lived.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+</body>
+</html>
